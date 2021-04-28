@@ -40,3 +40,9 @@
 .selected {
   border: blue 5px solid;
 }
+.book {
+  transition: .4s ease-in-out;
+}
+.book:hover {
+  transform: scale(1.1);
+}

@@ -7,18 +7,18 @@ class MyBook extends React.Component {
     selected: false
   }
 
-  
+
   clickHandle = (e) => {
-    console.log(e)
-    this.setState({ selected: true ? true : false})
-}
+   
+    this.setState({ selected: true ? true : false })
+  }
   render() {
 
     const border = this.state.selected
 
 
     return <Col className={border ? "selected" : ""} key={this.props.book.asin} md={3}>
-      <Card  className="mb-3 shadow-lg">
+      <Card className="mb-3 shadow-lg book">
         <Card.Img onClick={this.clickHandle} height="350" variant="top" src={this.props.book.img} />
         <Card.Body className="d-flex flex-column justify-content-between">
           <Card.Title className="text-truncate">{this.props.book.title}</Card.Title>

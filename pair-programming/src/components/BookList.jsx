@@ -24,16 +24,12 @@ class BookList extends React.Component {
                 <Button variant="outline-success">Search</Button>
             </Form>
             <Row>
-                {console.log("First Book:", this.props.listOfBooks[0].title.toLowerCase())}
-                {console.log("searchInput:", this.state.searchInput.toLowerCase())}
-
                 {
                     this.props.listOfBooks.filter(book => book.title.toLowerCase().indexOf(this.state.searchInput.toLowerCase()) !== -1).map(book => {
 
                         return <MyBook book={book} />
                     })
                 }
-
             </Row>
         </Container>)
     }
