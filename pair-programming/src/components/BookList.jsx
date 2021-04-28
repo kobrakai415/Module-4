@@ -12,6 +12,7 @@ class BookList extends React.Component {
 
     handleBook = (e) => {
         this.setState({ searchInput: e.target.value })
+        e.target.className = "selected"
     }
 
 
