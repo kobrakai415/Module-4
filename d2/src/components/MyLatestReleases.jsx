@@ -2,11 +2,11 @@ import { Col, Card, Button, Row } from 'react-bootstrap'
 import romance from '../data/romance.json'
 
 const MyLatestReleases = () => {
-  return  <Row> {
-    romance.map((book) => {
+  return <Row> {
+    romance.slice(0, 8).map((book) => {
 
 
-      return <Col md={3}>
+      return <Col key={book.asin} md={3}>
         <Card className="mb-3 shadow-lg">
           <Card.Img height="350" variant="top" src={book.img} />
           <Card.Body className="d-flex flex-column justify-content-between">
