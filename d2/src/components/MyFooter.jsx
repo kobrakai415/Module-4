@@ -1,7 +1,7 @@
 
 
 const MyFooter = () => {
-    return <footer className="mt-5 d-flex justify-content-between">
+    return <footer className="mt-5 d-block d-sm-flex justify-content-between">
         <div>
             <h6>Shopping with us</h6>
             <ul className="shoppingWithUs">
